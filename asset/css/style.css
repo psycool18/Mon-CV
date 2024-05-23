@@ -11,11 +11,10 @@
 
 }
 body{
-    width: 60%;
+    width: max-content;
     margin:auto;
-    background-color: #fff;
-    padding: 20px;
-    border-right: 8px solid #333;
+    padding-right: 0;
+    border-right: 1px solid #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,8 +39,10 @@ span{
 }
 .image-styled {
    border-radius: 50%;
-   cursor: zoom-in;  
+   cursor: zoom-in;    
 }
+
+
 address{
     display: flex;
     background-color: #2c1d27;
@@ -56,8 +57,12 @@ a{
     font-family: "Raleway";
     text-decoration: none;
     align-items: center;
-
 }
+a:hover{
+    text-decoration: underline;
+}  
+
+
 h1{
     color: white;
     font-family: "Lato";
@@ -96,19 +101,40 @@ main{
     color: white;
     flex-direction: column;
     align-content: flex-start;
+    padding-right: 20px;
     
+}
+.left-column p{
+    padding-left: 20px;
+    text-indent: 50px;
+    text-align: justify;
+
 }
 .right-column{
     flex-direction: column;
     background-color: white;
     flex: 3;
+    padding: 20px;
+    padding-top: 0;
+}
+.right-column h2{
+    border-left: 8px solid #782221;
+    padding-left: 5px;
+}
+.experience:hover {
+    border-right: 8px solid #782221;
+    
+    
 }
 h2{
     display: flex;
     background-color: #dbc2a4;
     color: black;
     
+    
 }
+    
+
 .footer{
     display: flex;
     justify-content: center;
