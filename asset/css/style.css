@@ -13,6 +13,7 @@
 
 *{
     font-family: "Raleway",serif;
+
 }
 
 header{
@@ -39,7 +40,8 @@ address{
     flex-direction: row;
     width:1160px;
     padding:0px;
-    justify-content:space-evenly;
+    justify-content:space-around;
+    
 }
 a{
     display: flex;
@@ -47,6 +49,7 @@ a{
     font-family: "Raleway";
 text-decoration: none;
 align-items: center;
+
 }
 
 
@@ -63,7 +66,7 @@ align-items: center;
     justify-content:start;
     align-items: start ;
     }
-h1,h2{
+h1,h3{
     color: white;
     font-family: "Lato";
     background-color: #782221;
@@ -102,15 +105,25 @@ section{
     flex: 2; 
     padding: 0;
    
-    border: 1px solid #cccccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .left-column {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
+    color: white;
+    flex-direction: column;
+    align-content: flex-start;
+    
 }
 .right-column{
+    flex-direction: column;
     background-color: white;
     flex-grow: 2;
+}
+h2{
+    display: flex;
+    flex: 1;
+    background-color: #dbc2a4;
+    color: black;
+    
 }
