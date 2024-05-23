@@ -86,8 +86,6 @@ main{
     margin: auto;
     width: 1160px;
 }
-
-
 .column {
     
     flex-direction: row;
