@@ -10,6 +10,14 @@
 
 
 }
+body{
+    width: 60%;
+    margin:auto;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 8px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 *{
     font-family: "Raleway",serif;
@@ -30,9 +38,9 @@ span{
     display: flex;
     justify-content: center;    
 }
-img{
-    width: 250px;
-    height: 250px;
+.image-styled {
+   border-radius: 50%;
+   cursor: zoom-in;  
 }
 address{
     display: flex;
@@ -41,45 +49,21 @@ address{
     width:1160px;
     padding:0px;
     justify-content:space-around;
-    
 }
-a{
+a{  
     display: flex;
     color: white;
     font-family: "Raleway";
-text-decoration: none;
-align-items: center;
+    text-decoration: none;
+    align-items: center;
 
 }
-
-
-#flex-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#flex-col{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:start;
-    align-items: start ;
-    }
-h1,h3{
+h1{
     color: white;
     font-family: "Lato";
-    background-color: #782221;
     text-align: center;
     }                 
-#Expérience{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-section{
+main{
     display: flex;
     justify-content:space-around;
     flex-wrap: nowrap;
@@ -91,7 +75,7 @@ section{
 
 }
 .container {
-    display: flex; 
+    
     flex-direction: row; 
     gap: 0px  ;
     margin: auto;
@@ -100,16 +84,15 @@ section{
 
 
 .column {
-    display: flex;
+    
     flex-direction: row;
-    flex: 2; 
     padding: 0;
    
 }
 .left-column {
-    display: flex;
+   
     flex-wrap: wrap;
-    flex-grow: 1;
+    flex: 1;
     color: white;
     flex-direction: column;
     align-content: flex-start;
@@ -118,11 +101,10 @@ section{
 .right-column{
     flex-direction: column;
     background-color: white;
-    flex-grow: 2;
+    flex: 3;
 }
 h2{
     display: flex;
-    flex: 1;
     background-color: #dbc2a4;
     color: black;
     
@@ -133,5 +115,27 @@ h2{
     flex-wrap: wrap;
     background-color: #782221;
     width: 1160px;
-    
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.footer div{
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.social-icon {
+    width: 50px; 
+    height: 50px; 
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+}
+
+
+.social-icon:hover {
+    opacity: 0.7;
 }
