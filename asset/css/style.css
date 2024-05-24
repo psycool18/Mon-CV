@@ -31,6 +31,8 @@ header{
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
+    
     
 }
 span{
@@ -63,11 +65,12 @@ a:hover{
 }  
 
 
-h1{
+h1,em{
     color: white;
     font-family: "Lato";
     text-align: center;
-    }                 
+    font-size: 1.5em;
+}                 
 main{
     display: flex;
     justify-content:space-around;
@@ -147,11 +150,14 @@ h2{
 }
 
 
-.footer div{
+.footer div img {
     flex-direction:column;
     flex-wrap:wrap;
     justify-content: center;
 }
+
+
+
 .social-icon {
     width: 50px; 
     height: 50px; 
